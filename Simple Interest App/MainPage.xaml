@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Simple_Interest_App.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Simple_Interest_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+     <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,44,0,0" Text="Simple Interest Program " TextWrapping="Wrap" VerticalAlignment="Top" Height="106" Width="394" FontSize="35" TextAlignment="Center" FontWeight="Bold" Foreground="White" FontFamily="Times New Roman" TextDecorations="Underline"/>
+        <RadioButton x:Name="interest" Content="Interest" Margin="-430,-200,0,0" VerticalAlignment="Center" Height="69" Width="193" HorizontalAlignment="Center"/>
+        <RadioButton x:Name="rate" Content="Rate" Margin="-500,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <RadioButton x:Name="principal" Content="Principal" Margin="550,-235,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <RadioButton x:Name="time" Content="Time" Margin="570,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button x:Name="Select_Button" Content="Select" Height="60" Width="105" Margin="0,400,0,0" VerticalAlignment="Center" BorderBrush="White" Click="Button_Click" HorizontalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,-400,0,0" Text="Select what you want to calculate" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18"/>
+    </Grid>
+</Page>

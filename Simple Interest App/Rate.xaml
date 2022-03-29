@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Simple_Interest_App.Rate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Simple_Interest_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,-600,0,0" Text="You have Chosen Rate" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="30"/>
+        <Button Content="Back" Height="60" Width="105" Margin="75,400,150,0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="White" Click="Back_Click"/>
+        <Button Content="Solve" Height="60" Width="105" Margin="175,400,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="White" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Center" Margin="-300,-400,0,0" Text="Enter Interest:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Center" Margin="-300,-250,0,0" Text="Enter Principal:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Center" Margin="-323,-100,0,0" Text="Enter Time:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14"/>
+        <TextBox x:Name="interest" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="35" Width="291" Margin="150,-400,0,0" BorderThickness="2,2,2,2" FontSize="14" VerticalContentAlignment="Top" HorizontalContentAlignment="Left"/>
+        <TextBox x:Name="principal" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="35" Width="291" Margin="150,-250,0,0" BorderThickness="2,2,2,2" FontSize="14" VerticalContentAlignment="Top" HorizontalContentAlignment="Left"/>
+        <TextBox x:Name="time" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="35" Width="291" Margin="150,-100,0,0" BorderThickness="2,2,2,2" FontSize="14" VerticalContentAlignment="Top" HorizontalContentAlignment="Left"/>
+        <TextBlock HorizontalAlignment="Center" Margin="50,50,0,0" Text="Answer:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="18"/>
+        <TextBox x:Name="answer" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="60" Width="120" Margin="50,150,0,0" BorderThickness="2,2,2,2" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsEnabled="False" TextAlignment="Center" Background="White"/>
+    </Grid>
+</Page>
